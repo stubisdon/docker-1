@@ -1,0 +1,4 @@
+# first, download a boot2docker.iso from https://github.com/boot2docker/boot2docker/releases 
+# second, put this .iso into ~/.docker/machine/cache/
+# then, launch this command
+docker-machine create --driver virtualbox --virtualbox-boot2docker-url ~/.docker/machine/cache/boot2docker.iso Char

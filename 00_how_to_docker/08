@@ -1,0 +1,5 @@
+# get the latest alpine container from the hub
+docker pull alpine
+
+# launch it in the interactive mode and delete after completion
+docker run -it --rm alpine

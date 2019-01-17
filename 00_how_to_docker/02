@@ -1,0 +1,5 @@
+# here we get fifth column (IP) of a machine named Grep
+docker-machine ls | grep Char | awk '{print $5}'
+
+# an easier way
+docker-machine ip Char

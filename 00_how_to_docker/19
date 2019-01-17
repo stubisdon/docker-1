@@ -1,0 +1,38 @@
+docker run -dit --name Abathur -p 3000:3000 -v /home/docker/:/root -w /root python:2-slim
+
+#then go inside of a container's bash with
+docker exec -it Abathur bash
+
+#then install Flask
+pip install flask
+
+#set an env var for running flask
+export FLASK_APP=app.py
+
+#install vim
+apt-get update
+apt-get install vim
+
+#create a Hello World app with vim
+#vim app.py
+
+#paste this code 
+#from flask import Flask
+#app = Flask(__name__)
+
+#@app.route('/')
+#def hello_world():
+    return 'Hello, World!'
+
+#or run 
+echo "from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'" >> app.py
+
+#then launch the app on port 3000
+flask run -h 0.0.0.0 -p 3000
+
+#then open your local ip on the port 3000. in my case it was http://192.168.99.100:3000/

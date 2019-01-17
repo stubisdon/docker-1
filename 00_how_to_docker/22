@@ -1,0 +1,5 @@
+#ssh the Aiur machine with
+docker-machine ssh Aiur
+
+#then copy a line from the swarm initiation instructions, in my case it was 
+docker swarm join --token SWMTKN-1-325hm5rgbnjigj0lbvsc3rfoi2vr4uybrpo3h6ihtpsggj0o8e-74w5srdczkpjzzbk8eos86xod 192.168.99.100:2377

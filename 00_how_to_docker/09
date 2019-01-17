@@ -1,0 +1,8 @@
+# if you want to specify just the commands to run inside of a container
+apt-get update -y
+apt-get install git -y
+apt-get install gcc -y
+
+# if you want to run the container and automatically launch the commands
+docker run -it debian
+# then launch the commands above  
